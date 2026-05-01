@@ -1,21 +1,28 @@
 
 public class Weather {
 
-    private float temp;
+    private String city;
+    private double temp;
     private double humidity;
     private String condition;
-    private Clothes clothes;
+    private double windSpeed; //added from API
+    //private Clothes clothes;
 
-    public Weather(float temp, double humidity, String condition, Clothes clothes){
+    public Weather(String city, double temp, double humidity, String condition, double windSpeed){
+        this.city = city;
         this.temp = temp;
         this.humidity = humidity;
         this.condition = condition;
-        this.clothes = clothes;
+        this.windSpeed = windSpeed;
+        //this.clothes = clothes;
     }
 
 
-
-    public void getReport() {
+    //Print weather objects data - Jason S
+    //Split into different gettersfor clearner report - Jason S
+    public String getReport() {
+        return "Location: " + city + " Temperature: " + temp + " Humdity: " + humidity +
+            " Conditions: " + condition + " WindSpeed: " + windSpeed;
 
     }
 }
