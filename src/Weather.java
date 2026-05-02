@@ -17,6 +17,9 @@ public class Weather {
         //this.clothes = clothes;
     }
 
+    public double getTemp() {
+       return temp; 
+    }
 
     //Print weather objects data - Jason S
     //Split into different gettersfor clearner report - Jason S

@@ -17,34 +17,36 @@ public class Location {
     }
 
     //Setter Methods - Jason S
-    public void setState(){
-
+    public void setState(String state){
+        this.state=state;
     }
 
-    public void setZip(){
+    public void setZip(int zip){
+        this.zip=zip;
 
     }
-
-    public void setCity(){
+    //only this is used currently - Jason S
+    public void setCity(String city){
+        this.city=city;
 
     }
 
     //Getter Methods - Jason S
-    public String getState(){
+    public String getState(String state){
 
-        String userState;
+        String userState = state;
         return userState;
     }
 
-    public int getZip(){
+    public int getZip(int zip){
 
-        int userZip;
+        int userZip= zip;
         return userZip;
     }
 
-    public String getCity(){
+    public String getCity(String city){
 
-        String userCity;
+        String userCity = city;
         return userCity;
     }
 }
